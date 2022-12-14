@@ -24,6 +24,7 @@
 		979F21A2293E851C003F2256 /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F21A1293E851C003F2256 /* ProductDetailsView.swift */; };
 		979F21A4293E8530003F2256 /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F21A3293E8530003F2256 /* ProductDetailsViewModel.swift */; };
 		979F21A6293E854B003F2256 /* ProductDetailsFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F21A5293E854B003F2256 /* ProductDetailsFlowCoordinator.swift */; };
+		979F21A9294A5DE4003F2256 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F21A8294A5DE4003F2256 /* FilterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		979F21A1293E851C003F2256 /* ProductDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
 		979F21A3293E8530003F2256 /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
 		979F21A5293E854B003F2256 /* ProductDetailsFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsFlowCoordinator.swift; sourceTree = "<group>"; };
+		979F21A8294A5DE4003F2256 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				9712AF93293E6929002E906D /* MainFlowCoordinator.swift */,
 				9712AFA4293E7E30002E906D /* MainViewModel.swift */,
 				9712AF86293E50F3002E906D /* MainView.swift */,
+				979F21A8294A5DE4003F2256 /* FilterView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979F21A9294A5DE4003F2256 /* FilterView.swift in Sources */,
 				979F2199293E846D003F2256 /* CartView.swift in Sources */,
 				9712AF87293E50F3002E906D /* MainView.swift in Sources */,
 				979F21A4293E8530003F2256 /* ProductDetailsViewModel.swift in Sources */,

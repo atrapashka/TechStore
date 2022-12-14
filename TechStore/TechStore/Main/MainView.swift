@@ -4,32 +4,40 @@ import SwiftUI
 struct MainView<VM: MainViewModelProtocol & MainFlowStateProtocol>: View {
 
     @StateObject var viewModel: VM
+    @State var showFilter = false
 
     var body: some View {
         MainFlowCoordinator(state: viewModel, content: content)
     }
 
     @ViewBuilder private func content() -> some View {
-        ZStack {
-            Color.white.ignoresSafeArea()
-            
-            VStack(alignment: .leading) {
-                Text("Location area")
-                    .frame(width: 200, height: 30, alignment: .top)
-                    .foregroundColor(.pink)
-                    .font(.custom("Mark-Light", size: 30))
-            }
-//            .padding()
-
-            VStack {
-                Text(viewModel.text)
-                
-                
-                Button("Product details view --->", action: viewModel.transitToProductDetails)
-                Button("Cart View --->", action: viewModel.transitToCart)
-            }
+        NavigationView {
+            Text("")
+                .navigationTitle("⚲ Location  ⌵")
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationBarItems(trailing: Button("Filter") {
+                    self.showFilter.toggle()
+                })
         }
-//        .navigationBarTitle("Title", displayMode: .inline)
-        .navigationBarHidden(true)
+        
+        FilterView()
+            .offset(y: showFilter ? 175 : 600)
+//        ZStack {
+//            Color.white.ignoresSafeArea()
+//            Text(viewModel.text)
+//                .padding(.bottom, 200)
+//
+//            VStack {
+//                HStack {
+//                    Button("Product details view", action: viewModel.transitToProductDetails)
+////                        .padding(.horizontal, 50)
+//                        .background(.yellow)
+//                        .frame(width: 250)
+//                    Button("Cart View", action: viewModel.transitToCart)
+//                        .background(.pink)
+//                        .frame(width: 250)
+//                }
+//            }
+//        }
     }
 }
