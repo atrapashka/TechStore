@@ -12,18 +12,29 @@ struct FilterView: View {
     @State private var brand = "Select Brand"
     
     static let brands = ["Apple", "Samsung", "Sony"]
+    static let prices = ["200 - 300", "400 - 500", "600 - 700"]
+    static let sizes = ["4.5 - 5.4", "5.5 - 6.4", "6.5 - 7.4"]
     
     var body: some View {
         VStack {
             HStack {
-                Button("Close") {
+                Button("✕") {
                     
                 }
+                .frame(width: 37, height: 37)
+                .background(Color(hex: 0x010035))
+                .foregroundColor(.white)
+                .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                Spacer()
                 Text("Filter Options")
-                    
-                Button("Filter Close") {
+                Spacer()
+                Button("Done") {
                     
                 }
+                .frame(width: 86, height: 37)
+                .background(Color(hex: 0xFF6E4E))
+                .foregroundColor(.white)
+                .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
             }
             .font(.custom("Mark-Medium",
                       size: 18))
@@ -37,13 +48,13 @@ struct FilterView: View {
                 }
                 Text("Price")
                 Picker("Choose price", selection: $brand) {
-                    ForEach(FilterView.brands, id: \.self) {
+                    ForEach(FilterView.prices, id: \.self) {
                         Text($0)
                     }
                 }
                 Text("Size")
                 Picker("Screen size", selection: $brand) {
-                    ForEach(FilterView.brands, id: \.self) {
+                    ForEach(FilterView.sizes, id: \.self) {
                         Text($0)
                     }
                 }
@@ -66,3 +77,5 @@ struct FilterView_Previews: PreviewProvider {
         FilterView()
     }
 }
+
+// ебануть 2 скролл вью для итемсов и бест селлера
