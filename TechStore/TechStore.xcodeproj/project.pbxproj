@@ -24,6 +24,9 @@
 		979F21A2293E851C003F2256 /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F21A1293E851C003F2256 /* ProductDetailsView.swift */; };
 		979F21A4293E8530003F2256 /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F21A3293E8530003F2256 /* ProductDetailsViewModel.swift */; };
 		979F21A6293E854B003F2256 /* ProductDetailsFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F21A5293E854B003F2256 /* ProductDetailsFlowCoordinator.swift */; };
+		979F21A9294A5DE4003F2256 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F21A8294A5DE4003F2256 /* FilterView.swift */; };
+		97D3294F294B585D0090A54C /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D3294E294B585D0090A54C /* UIColor+hex.swift */; };
+		97FCA15E294B71060055D19C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FCA15D294B71050055D19C /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,9 @@
 		979F21A1293E851C003F2256 /* ProductDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
 		979F21A3293E8530003F2256 /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
 		979F21A5293E854B003F2256 /* ProductDetailsFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsFlowCoordinator.swift; sourceTree = "<group>"; };
+		979F21A8294A5DE4003F2256 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		97D3294E294B585D0090A54C /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
+		97FCA15D294B71050055D19C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +84,12 @@
 			isa = PBXGroup;
 			children = (
 				9712AF84293E50F3002E906D /* TechStoreApp.swift */,
+				97FCA160294BBF600055D19C /* CustomViews */,
 				9712AFA7293E8379002E906D /* ProductDetails */,
 				9712AFA6293E8373002E906D /* Cart */,
 				9712AF92293E6913002E906D /* Main */,
 				9712AF88293E50F5002E906D /* Assets.xcassets */,
+				97FCA15F294BBF440055D19C /* Extensions */,
 				9712AF99293E7BDB002E906D /* Fonts */,
 				9712AF8A293E50F5002E906D /* Preview Content */,
 			);
@@ -136,6 +144,23 @@
 				979F21A1293E851C003F2256 /* ProductDetailsView.swift */,
 			);
 			path = ProductDetails;
+			sourceTree = "<group>";
+		};
+		97FCA15F294BBF440055D19C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				97D3294E294B585D0090A54C /* UIColor+hex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		97FCA160294BBF600055D19C /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				979F21A8294A5DE4003F2256 /* FilterView.swift */,
+				97FCA15D294B71050055D19C /* SearchBar.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +238,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97FCA15E294B71060055D19C /* SearchBar.swift in Sources */,
+				979F21A9294A5DE4003F2256 /* FilterView.swift in Sources */,
 				979F2199293E846D003F2256 /* CartView.swift in Sources */,
 				9712AF87293E50F3002E906D /* MainView.swift in Sources */,
 				979F21A4293E8530003F2256 /* ProductDetailsViewModel.swift in Sources */,
@@ -221,6 +248,7 @@
 				979F21A6293E854B003F2256 /* ProductDetailsFlowCoordinator.swift in Sources */,
 				9712AF85293E50F3002E906D /* TechStoreApp.swift in Sources */,
 				979F21A2293E851C003F2256 /* ProductDetailsView.swift in Sources */,
+				97D3294F294B585D0090A54C /* UIColor+hex.swift in Sources */,
 				9712AF94293E6929002E906D /* MainFlowCoordinator.swift in Sources */,
 				9712AFA5293E7E30002E906D /* MainViewModel.swift in Sources */,
 			);
