@@ -27,6 +27,7 @@
 		979F21A9294A5DE4003F2256 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F21A8294A5DE4003F2256 /* FilterView.swift */; };
 		97D3294F294B585D0090A54C /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D3294E294B585D0090A54C /* UIColor+hex.swift */; };
 		97FCA15E294B71060055D19C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FCA15D294B71050055D19C /* SearchBar.swift */; };
+		97FCA166294CC0450055D19C /* ProductInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FCA165294CC0450055D19C /* ProductInfoResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		979F21A8294A5DE4003F2256 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		97D3294E294B585D0090A54C /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
 		97FCA15D294B71050055D19C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		97FCA165294CC0450055D19C /* ProductInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfoResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				9712AF84293E50F3002E906D /* TechStoreApp.swift */,
+				97FCA165294CC0450055D19C /* ProductInfoResponse.swift */,
 				97FCA160294BBF600055D19C /* CustomViews */,
 				9712AFA7293E8379002E906D /* ProductDetails */,
 				9712AFA6293E8373002E906D /* Cart */,
@@ -244,6 +247,7 @@
 				9712AF87293E50F3002E906D /* MainView.swift in Sources */,
 				979F21A4293E8530003F2256 /* ProductDetailsViewModel.swift in Sources */,
 				979F21A0293E84FD003F2256 /* CartViewModel.swift in Sources */,
+				97FCA166294CC0450055D19C /* ProductInfoResponse.swift in Sources */,
 				979F219E293E84F3003F2256 /* CartFlowCoordinator.swift in Sources */,
 				979F21A6293E854B003F2256 /* ProductDetailsFlowCoordinator.swift in Sources */,
 				9712AF85293E50F3002E906D /* TechStoreApp.swift in Sources */,
