@@ -1,9 +1,3 @@
-//
-//  FilterView.swift
-//  TechStore
-//
-//  Created by Alehandro on 14.12.22.
-//
 
 import SwiftUI
 
@@ -77,5 +71,3 @@ struct FilterView_Previews: PreviewProvider {
         FilterView()
     }
 }
-
-// ебануть 2 скролл вью для итемсов и бест селлера

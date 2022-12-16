@@ -4,7 +4,6 @@ import UIKit
 
 protocol MainViewModelProtocol: ObservableObject {
     var text: String { get }
-//    var topView: UIView { get }
 
     func transitToProductDetails()
     func transitToCart()
@@ -26,6 +25,6 @@ final class MainViewModel: MainViewModelProtocol, MainFlowStateProtocol {
     }
 
     func transitToCart() {
-        activeLink = .cartLink(item: "BEBRA CART")
+        activeLink = .cartLink(item: "")
     }
 }
